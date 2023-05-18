@@ -1,12 +1,5 @@
-elem' :: (Eq a) => a -> [a] -> Bool
-elem' a = False
-elem' a (x:xs)
-    | a == x    = True
-    | otherwise = a `elem'` xs
+myelem a [] = False
+myelem a (x:xs) = if a == x then True else myelem xs
 
-
--- Check if an item doesn't appear in a list.
--- This function should be identical to
--- the standard elem function in prelude.
-notElem' :: (Eq a) => a -> [a] -> Bool
-notElem' a xs = not (elem' a)
+myNotElem :: Eq a => a -> [a] -> Bool
+myNotElem a xs = not (myelem a)

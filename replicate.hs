@@ -1,5 +1,7 @@
 -- theme: list
 
-g :: [String] -> Int -> [String]
-g xs n = map (replicate n) xs
+replicate :: Int -> a -> [a]
+replicate = undefined
 
+g :: [Char] -> Int -> [Char]
+g xs n = map (replicate n) xs
