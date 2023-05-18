@@ -1,5 +1,8 @@
 -- theme: basics
-double :: Int -> Int
 double x = x * 2
 
-x = double "Hello"
+u = double "Hello"
+
+triple x = x + x + x
+
+v = triple '4'
