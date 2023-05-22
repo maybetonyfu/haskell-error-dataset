@@ -1,5 +1,3 @@
--- Not Working
-
 data Person = Person String Int
 
 class HasAge a where
@@ -10,3 +8,8 @@ instance HasAge Person where
 
 olderThan :: a -> a -> Bool
 olderThan x y = ageOf x >= ageOf y
+
+-- theme: type class
+-- goanna results: 11
+-- oracle: true
+-- intended fix: 1

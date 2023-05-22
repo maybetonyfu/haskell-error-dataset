@@ -57,3 +57,8 @@ renderPairs (p:ps) = renderPair p ++ "," ++ renderPairs ps
 renderArrayValues [] = ""
 renderArrayValues [v] = renderJValue v
 renderArrayValues (v:vs) = renderJValue v ++ "," ++ renderArrayValues vs
+
+-- theme: adt
+-- goanna fixes: 15
+-- oracle: true
+-- intended fix: 1

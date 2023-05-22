@@ -1,5 +1,3 @@
--- theme: basics
-
 samples = [3.0, 4.0, 5.0, 6.0]
 
 range xs = length xs
@@ -10,6 +8,8 @@ sd xs = sqrt (variance xs)
 
 variance xs = map (\x -> (x - mean xs) ^ 2 / range xs) xs
 
-main =
-  putStr "Standard deviation is: "
-    >> print (sd samples)
+
+-- theme: function
+-- goanna results: 3/ 5
+-- oracle: true
+--intended fix: 1/1

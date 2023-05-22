@@ -11,3 +11,8 @@ multiplyState n = do
   x <- get
   put (x * n)
 
+
+-- theme: monad
+-- goanna results: 2
+-- oracle: true
+-- intended fix: 2

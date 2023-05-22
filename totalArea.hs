@@ -5,3 +5,9 @@ area (Circle r) = pi * r * r
 area (Rectangle w h) = w * h
 
 shapes = [Rectangle 2.0, Circle 1.0]
+
+
+--theme: adt
+-- goanna fixes: 2
+-- oracle: true
+-- intended fix: 2

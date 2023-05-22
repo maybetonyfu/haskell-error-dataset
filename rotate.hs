@@ -13,3 +13,9 @@ rotate x 0 = x
 rotate x y
   | y > 0 = rotate (rotate1 x) (y-1)
   | otherwise = rotate (rotate1Back x)
+
+
+-- theme: adt, list, function
+-- goanna results: 1
+-- oracle: true
+-- intended fix: 1

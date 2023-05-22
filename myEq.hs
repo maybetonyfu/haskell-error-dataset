@@ -22,3 +22,8 @@ instance MyEq a => MyEq (MyList a) where
   myeq _ _ = False
 
 isEq = myeq (Pair (Cons True Nil) True) (Pair (Cons True Nil) False)
+
+-- theme: type class
+-- goanna results: 3
+-- oracle: true
+-- intended fix: 2

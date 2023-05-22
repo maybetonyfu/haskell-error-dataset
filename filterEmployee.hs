@@ -9,3 +9,9 @@ people = [Employee "Alice" 123, Customer "Bob" 456, Employee "Charlie" 789]
 
 employees :: [Person]
 employees = filter filterEmployees people
+
+
+-- theme: list
+-- goanna results: 3
+-- oracle: false
+-- intended fix: none

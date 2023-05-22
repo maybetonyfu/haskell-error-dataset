@@ -20,11 +20,10 @@ bookTrans z =
 transformKey x y "author"
   | elem x ["mvbook", "book"] =
     ["bookauthor", "author"]
--- note: this next clause is not in the biblatex manual, but it makes
--- sense in the context of CSL conversion:
-transformKey x y "author"
-  | x == "mvbook" = ["bookauthor", "author"]
-transformKey "mvbook" y z
-  | elem y ["book", "inbook", "bookinbook", "suppbook"] =
-    standardTrans z
 transformKey _ _ x = [x]
+
+
+-- theme: list
+-- goanna results: 4
+-- oracle: true
+-- intended fix: 1

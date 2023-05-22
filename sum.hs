@@ -8,3 +8,8 @@ check (x:xs)
 --
 y :: [Int]
 y = check [1..999]
+
+-- theme: list
+-- goana results: 3
+-- oracle: true
+-- intended fix: 1

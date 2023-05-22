@@ -12,3 +12,8 @@ findFirstExe' fs' (f:fs) = do
 doesExecutableExist :: String -> IO Bool
 doesExecutableExist _ = do
   return True
+
+-- theme: monad
+-- goanna results: 4
+-- oracle: true
+-- intended fix: 1

@@ -1,6 +1,12 @@
--- theme: basics
-w u = case u of
-        "True" -> 3
-        "False" -> 4
-        True -> 1
+parsingStringFlat flag =
+  case flag of
+        "True" -> 1
+        False -> 2
+        "True1" -> 3
         "False2" -> 4
+        otherwise -> 0
+
+-- theme: basics
+-- goanna results: 2
+-- oracle: true
+-- intended fix: 1

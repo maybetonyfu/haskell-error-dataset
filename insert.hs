@@ -6,4 +6,7 @@ insertAt el list n =
                 else (acc ++ [x],i+1)
     in fst (foldl accu ([],1) list)
 
-
+-- theme: basics
+-- goanna results: 12
+-- oracle: true
+-- intended fix: 3

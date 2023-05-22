@@ -1,4 +1,3 @@
--- theme: basics
 email = "john@fp.com"
 phone = 22490012
 
@@ -7,3 +6,8 @@ phone = 22490012
 showContact choice = if choice == "email"
     then email
     else phone
+
+-- theme: basics
+-- goanna results: 4
+-- oracle: false
+-- intended fix: none

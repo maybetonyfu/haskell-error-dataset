@@ -13,3 +13,7 @@ expect = 25
 test :: Bool
 test = actual == expect
 
+-- theme: adt
+-- goana resultsL 12
+-- oracle: true
+-- intended fix: 2

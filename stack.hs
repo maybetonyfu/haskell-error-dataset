@@ -17,3 +17,9 @@ push :: Int -> State Stack ()
 push x = do
   Stack xs <- get
   put (Stack (x : xs))
+
+
+-- theme: monad
+-- goanna results: 12
+-- oracle: true
+-- intended fix: 1

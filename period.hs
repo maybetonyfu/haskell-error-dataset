@@ -48,3 +48,9 @@ periodAsDateSpan (MonthPeriod y m) = (Just (fromGregorian y m 1), Just (fromGreg
     (y', m')
       | m == 12 = (y + 1, 1)
       | otherwise = (y, m + 1)
+
+
+-- theme: adt
+-- goanna results: 12
+-- oracle: true
+-- intended fix: 1

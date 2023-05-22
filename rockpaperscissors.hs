@@ -1,6 +1,3 @@
--- theme: list, adt
--- Too large
-
 data Hand = Rock | Paper | Scissors
 type Score = (Int, Int)
 winsOver :: Hand -> Hand -> Bool
@@ -23,3 +20,9 @@ pairScore (h1, h2) = computeScore h1 h2
 score :: [Hand] -> [Hand] -> Score
 score h1 h2 =
     foldl combine (0, 0) (pairScore (zip h1 h2))
+
+
+-- theme: adt, list, function
+-- goanna results: 7
+-- oracle: true
+-- intended fix: 1

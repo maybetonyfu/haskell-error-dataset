@@ -9,3 +9,8 @@ maybeOrZero m = fromMaybe' 0 m
 a = maybeOrZero (Just 3)
 b = maybeOrZero Nothing
 c = a + b
+
+-- theme:  adt
+-- goanna results: 31
+-- oracle: true
+-- intended fix: 3

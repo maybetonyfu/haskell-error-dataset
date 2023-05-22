@@ -20,4 +20,9 @@ printXML (Element name [attributs] xmls) =
   ++ "</" ++ name ++ ">"
 printXML (Text text) = text
 
+-- theme: adt
+-- goanna results: 4
+-- oracle: true
+-- intended fix: 4
+
 

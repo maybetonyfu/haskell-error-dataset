@@ -1,4 +1,3 @@
--- theme: list
 divides x y = y `mod` x == 0
 
 
@@ -13,3 +12,9 @@ dropEvery' (x:xs) n i =
                 then []
                 else [x]
     in current : dropEvery' xs n (i+1)
+
+
+-- theme: list
+-- goanna results: 4
+-- oracle: true
+-- intended fix: 1

@@ -1,4 +1,8 @@
--- intention: should use monoid instead of functor
 
 foo :: (Functor f) => f a -> f b
 foo xs = xs ++ xs
+
+-- theme:  function, type-class
+-- goanna results: 3
+-- oracle: false
+-- intended fix: none
